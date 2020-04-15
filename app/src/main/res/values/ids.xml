@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnPlus" type="id"/>
+    <item name="btnMinus" type="id"/>
+    <item name="linearLayout5" type="id"/>
+    <item name="btnDiv" type="id" />
+    <item name="btnX" type="id" />
+    <item name="btnZero" type="id" />
+    <item name="btnOne" type="id" />
+    <item name="btnTwo" type="id" />
+    <item name="btnRoot" type="id" />
+    <item name="btnThree" type="id" />
+    <item name="btnFour" type="id" />
+    <item name="btnFive" type="id" />
+    <item name="btnSix" type="id" />
+    <item name="btnSame" type="id" />
+    <item name="btnPower" type="id" />
+    <item name="btnSeven" type="id" />
+    <item name="btnEight" type="id" />
+    <item name="btnNine" type="id" />
+    <item name="btnDelete" type="id" />
+    <item name="btnPoint" type="id" />
+    <item name="btnClear" type="id" />
+</resources>

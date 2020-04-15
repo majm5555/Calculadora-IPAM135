@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppCalculadoraDigital</string>
+    <string name="onoff">ON/OFF</string>
+    <string name="calc">IPAM135</string>
+</resources>

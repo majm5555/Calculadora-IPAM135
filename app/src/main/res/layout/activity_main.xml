@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:background="@color/colorContent"
+ tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/ipam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorContent"
+            android:gravity="center_horizontal"
+            android:text="@string/calc"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorContent"
+            android:textSize="30dp"
+            android:layout_below="@+id/ipam" />
+
+
+    <TextView
+        android:id="@+id/txtRESULT"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:background="@color/colorContent"
+        android:inputType="numberDecimal"
+        android:textColor="@color/greenColor"
+        android:textSize="40dp"
+        android:layout_below="@+id/display" />
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:id="@+id/btnOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRESULT"
+        android:layout_weight="1"
+        android:background="@color/colorRed"
+        android:onClick="enableBtn"
+        android:padding="15dp"
+        android:text="@string/onoff"
+        android:textColor="@color/colorWhite" />
+
+    <ImageButton
+        android:background="@color/colorWhite"
+        android:padding="15dp"
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnOnOff"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="clickKey"
+        android:saveEnabled="false"
+        android:src="@drawable/division" />
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/plus"
+        android:layout_toRightOf="@id/btnFour"
+        android:layout_below="@+id/btnOnOff"
+     />
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/minus"
+        android:layout_toRightOf="@id/btnPlus"
+        android:layout_below="@+id/btnOnOff" />
+
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/close"
+        android:layout_toRightOf="@id/btnMinus"
+        android:layout_below="@+id/btnOnOff"/>
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnOne"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:onClick="clickKey"
+        android:src="@drawable/one"
+        android:layout_below="@+id/btnDiv" />
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/two"
+        android:layout_toRightOf="@id/btnOne"
+        android:layout_below="@+id/btnPlus"/>
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/three"
+        android:layout_toRightOf="@id/btnTwo"
+        android:layout_below="@+id/btnMinus" />
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnRoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:onClick="clickKey"
+        android:src="@drawable/raiz"
+        android:layout_toRightOf="@id/btnThree"
+        android:layout_below="@+id/btnX" />
+
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/four"
+        android:layout_below="@+id/btnOne"/>
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/five"
+        android:layout_toRightOf="@+id/btnFour"
+        android:layout_below="@+id/btnTwo"/>
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/six"
+        android:layout_toRightOf="@id/btnFive"
+        android:layout_below="@+id/btnThree"/>
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/power"
+        android:layout_toRightOf="@id/btnSix"
+        android:layout_below="@+id/btnRoot"/>
+
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnSeven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/seven"
+        android:layout_below="@+id/btnFour"/>
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnEight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/eight"
+        android:layout_toRightOf="@id/btnSeven"
+        android:layout_below="@+id/btnFive" />
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnNine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/nine"
+        android:layout_toRightOf="@+id/btnEight"
+        android:layout_below="@+id/btnSix" />
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/delete"
+        android:layout_toRightOf="@id/btnNine"
+        android:layout_below="@+id/btnPower"/>
+
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/point"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/btnSeven" />
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnZero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/zero"
+        android:layout_toRightOf="@id/btnPoint"
+        android:layout_below="@+id/btnEight" />
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnSame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/equal"
+        android:layout_toRightOf="@id/btnZero"
+        android:layout_below="@+id/btnNine" />
+
+    <ImageButton
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickKey"
+        android:src="@drawable/trash"
+        android:layout_toRightOf="@id/btnSame"
+        android:layout_below="@+id/btnDelete" />
+ app:layout_constraintStart_toStartOf="@+id/btnDelete"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete"
+
+</RelativeLayout>
